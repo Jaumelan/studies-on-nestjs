@@ -5,6 +5,10 @@
 
 Because this is an exercise, the app uses sqllite and the Typeorm sinchronize is set true for development porpouse.
 Many of the routes does not make sense in a real app, but those are there for practicing with Typeorm.
+The hooks that are also inside the user entity are for helping visualize the process.
+We also use the methods from the [Repository API](https://typeorm.io/repository-api).
+
+
 
 ## Structure of the app
 
