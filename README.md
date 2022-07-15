@@ -17,3 +17,8 @@ We also use the methods from the [Repository API](https://typeorm.io/repository-
 ## Users module routes
 
 ![User Routes](readme-files/user-module-routes.jpeg)
+
+## Custom Serialization Interceptor
+With a custom decorator
+
+![User Interceptor](readme-files/user-interceptor.jpeg)
