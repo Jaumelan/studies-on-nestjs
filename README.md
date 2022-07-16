@@ -22,3 +22,10 @@ We also use the methods from the [Repository API](https://typeorm.io/repository-
 With a custom decorator
 
 ![User Interceptor](readme-files/user-interceptor.jpeg)
+
+## User authentication
+The authentication service uses the users services.
+It stores the hashed password with a random salt to prevent rainbow table attacks, and the signin process send a cookie with the Cookie-Session library.
+This choice is to show a classic, tried-and-true approach using cookies. But can be used the JWT approach instead.
+
+![Sign in](readme-files/signin-process.jpeg)

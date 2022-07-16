@@ -14,6 +14,10 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    if (!id) {
+      throw new NotFoundException('Unknown user');
+    }
+
     return this.repo.findOne({ where: { id } });
   }
 
