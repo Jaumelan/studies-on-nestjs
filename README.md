@@ -33,3 +33,7 @@ There is also a guard and a custom decorator to check the current user from the 
 
 ## Testing unit for auth service
 Creation of a unit testing for the auth service with a mock of UsersService
+
+## Testing unit for the users controller
+Testing running with mock versions of auth service and user service.
+Not All methods are tested, just the ones I find more important.
