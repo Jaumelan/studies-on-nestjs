@@ -45,7 +45,7 @@ export class AuthService {
 
     const hashed = (await scrypt(password, salt, 32)) as Buffer;
 
-    if (!hashed.equals(Buffer.from(hashedPassword, 'hex'))) {
+    if (hashedPassword !== hashed.toString('hex')) {
       throw new BadRequestException('Invalid password');
     }
 

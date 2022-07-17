@@ -19,7 +19,7 @@ import { UsersService } from './users.service';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { Serialize } from '../interceptors/serialize.interceptor';
 import { UserDto } from './dtos/user.dto';
-import { AuthGuard } from 'src/guards/auth.guard';
+import { AuthGuard } from '../guards/auth.guard';
 
 @Controller('auth')
 @Serialize(UserDto)

@@ -27,5 +27,9 @@ With a custom decorator
 The authentication service uses the users services.
 It stores the hashed password with a random salt to prevent rainbow table attacks, and the signin process send a cookie with the Cookie-Session library.
 This choice is to show a classic, tried-and-true approach using cookies. But can be used the JWT approach instead.
+There is also a guard and a custom decorator to check the current user from the request.
 
 ![Sign in](readme-files/signin-process.jpeg)
+
+## Testing unit for auth service
+Creation of a unit testing for the auth service with a mock of UsersService
