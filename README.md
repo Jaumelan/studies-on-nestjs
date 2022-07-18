@@ -37,3 +37,7 @@ Creation of a unit testing for the auth service with a mock of UsersService
 ## Testing unit for the users controller
 Testing running with mock versions of auth service and user service.
 Not All methods are tested, just the ones I find more important.
+
+## End-to-end Test
+For the test, we created a separate sqllite db, which is wipe out after the test conclusion. Nestjs recommended best practices are followed.
+We set the node_env to correctly choose between the development or test environment.
