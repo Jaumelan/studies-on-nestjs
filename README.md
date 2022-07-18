@@ -41,3 +41,8 @@ Not All methods are tested, just the ones I find more important.
 ## End-to-end Test
 For the test, we created a separate sqllite db, which is wipe out after the test conclusion. Nestjs recommended best practices are followed.
 We set the node_env to correctly choose between the development or test environment.
+
+## Reports module
+Each report is associated to an already created user. The association is one-to-many. 
+
+![Association](readme-files/reports_association.jpeg)
