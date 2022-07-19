@@ -52,3 +52,8 @@ The permission system will allow the adm to approve a report.
 The CurrentUser Interceptor was transformed into a middleware, because the interceptor runs after middlewares and guards.
 
 ![Authorization Guard](readme-files/authorization.jpeg)
+
+## Get Estimate Route
+This route will send an estimate of a car, with the characteristics sent in the request, for this we use the createQueryBuilder from TypeORM.
+
+![Query estimate](readme-files/queries-estimates.jpeg)

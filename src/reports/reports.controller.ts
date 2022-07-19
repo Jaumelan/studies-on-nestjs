@@ -31,13 +31,13 @@ export class ReportsController {
   }
 
   @Patch('/:id')
-  @UseGuards(AuthGuard, AdminGuard)
+  @UseGuards(AdminGuard)
   async approveReport(@Param('id') id: string, @Body() body: ApproveReportDto) {
     return this.reportsService.approve(id, body.approved);
   }
 
   @Get()
   getEstimate(@Query() query: GetEstimateDto) {
-    console.log(query);
+    return this.reportsService.createEstimate(query);
   }
 }
