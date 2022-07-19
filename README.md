@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Because this is an exercise, the app uses sqllite and the Typeorm sinchronize is set true for development porpouse.
-Many of the routes does not make sense in a real app, but those are there for practicing with Typeorm.
+Many of the routes do not make sense in a real app, but those are there for practicing with Typeorm.
 The hooks that are also inside the user entity are for helping visualize the process.
 We also use the methods from the [Repository API](https://typeorm.io/repository-api).
 
@@ -46,3 +46,9 @@ We set the node_env to correctly choose between the development or test environm
 Each report is associated to an already created user. The association is one-to-many. 
 
 ![Association](readme-files/reports_association.jpeg)
+
+## Basic Permission System
+The permission system will allow the adm to approve a report.
+The CurrentUser Interceptor was transformed into a middleware, because the interceptor runs after middlewares and guards.
+
+![Authorization Guard](readme-files/authorization.jpeg)

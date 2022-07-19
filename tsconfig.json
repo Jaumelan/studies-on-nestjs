@@ -3,6 +3,7 @@
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
+    "typeRoots": ["./@types", "./node_modules/@types"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
